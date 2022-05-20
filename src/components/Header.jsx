@@ -7,7 +7,10 @@ export default function Header() {
   return (
     <div className="header">
       <div className="header-top">
-        <FontAwesomeIcon icon={faBars} />
+        <div className="headertop-item">
+          <p>Chuyên mục</p>
+          <FontAwesomeIcon icon={faBars} />
+        </div>
       </div>
       <div className="header-bottom"></div>
     </div>
