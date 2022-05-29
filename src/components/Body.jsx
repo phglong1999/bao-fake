@@ -11,7 +11,11 @@ export default function Body() {
     async function getRss() {
       const parser = new XMLParser();
       setLoading(true);
-      const res = await axios.get("https://thanhnien.vn/rss/home.rss");
+      const res = await axios.get("https://thanhnien.vn/rss/home.rss", {
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+        },
+      });
       let jObj = parser.parse(res.data);
       console.log(jObj.rss.channel);
       setRss(jObj.rss.channel.item);
@@ -46,7 +50,9 @@ export default function Body() {
                 </a>
                 <div className="test" style={{ padding: "18px" }}>
                   <a className="title" href={rss[0].link}>
-                    Vừa mua vé máy bay đã bị 'khủng bố' tin nhắn mời gọi đặt xe
+                    {/* {rss[0].title} */}
+                    Nông dân thiệt thòi nhất khi giá phân bón, thức ăn chăn nuôi
+                    tăng phi mã
                   </a>
                   <p className="time">{getTime(rss[0].pubDate)}</p>
                 </div>
