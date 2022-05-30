@@ -2,18 +2,10 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
 import "./BodyLeft.scss";
+import Feature from "./Feature";
+import { getTime } from "../../utils/rss";
 
 export default function BodyLeft({ rss }) {
-  function getTime(str) {
-    console.log(str);
-    let date = new Date(str);
-    let x = (Date.now() - date.getTime()) / 1000 / 60 / 60;
-    if (x < 1) {
-      return parseInt(x * 60) + " phút trước";
-    } else {
-      return parseInt(x) + " giờ trước";
-    }
-  }
   return (
     <div className="left flex">
       <div className="hightlight">
@@ -34,6 +26,7 @@ export default function BodyLeft({ rss }) {
           </p>
         </div>
       </div>
+      <Feature rss={rss}></Feature>
     </div>
   );
 }

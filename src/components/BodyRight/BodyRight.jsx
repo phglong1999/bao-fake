@@ -20,7 +20,7 @@ export default function BodyRight({ rss }) {
         </ul>
         <div className="tabContent">
           {rss &&
-            rss.slice(0, 8).map((item, index) => (
+            rss.slice(0, 7).map((item, index) => (
               <article className="side-article flex">
                 <p>{partDateTime(item.pubDate)}</p>
                 <a href={item.link}>{removeCDATA(item.title)}</a>
