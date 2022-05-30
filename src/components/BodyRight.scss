@@ -1,0 +1,26 @@
+.right {
+  width: 300px;
+  margin-left: 20px;
+  .nav {
+    width: 100%;
+    height: fit-content;
+    .nav-link {
+      font-family: NotoSerif, Georgia, "Times New Roman", Times, serif;
+      font-size: 1.6rem;
+      color: #000;
+      text-transform: uppercase;
+      padding: 7px 14px;
+      border: none;
+      cursor: pointer;
+    }
+    .active {
+      font-weight: 700;
+      color: #495057;
+      background-color: #fff;
+      border-color: #dee2e6 #dee2e6 #fff;
+    }
+  }
+  .tabContent {
+    padding: 20px;
+  }
+}
