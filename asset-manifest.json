@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bao-fake/static/css/main.2c5a1e90.css",
+    "main.js": "/bao-fake/static/js/main.c3a60e56.js",
+    "index.html": "/bao-fake/index.html",
+    "main.2c5a1e90.css.map": "/bao-fake/static/css/main.2c5a1e90.css.map",
+    "main.c3a60e56.js.map": "/bao-fake/static/js/main.c3a60e56.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c5a1e90.css",
+    "static/js/main.c3a60e56.js"
+  ]
+}
