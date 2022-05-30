@@ -2,9 +2,9 @@ import React from "react";
 import "./Body.scss";
 import axios from "axios";
 import { XMLParser } from "fast-xml-parser";
-import Loading from "./Loading";
-import BodyLeft from "./BodyLeft";
-import BodyRight from "./BodyRight";
+import Loading from "../Loading/Loading";
+import BodyLeft from "../BodyLeft/BodyLeft";
+import BodyRight from "../BodyRight/BodyRight";
 
 export default function Body() {
   const [rss, setRss] = React.useState([]);
@@ -16,6 +16,7 @@ export default function Body() {
       const res = await axios.get("https://thanhnien.vn/rss/home.rss", {
         headers: {
           "Access-Control-Allow-Origin": "*",
+          "upgrade-insecure-requests": 1,
         },
       });
       let jObj = parser.parse(res.data);
@@ -30,7 +31,7 @@ export default function Body() {
       {loading && <Loading />}
       {!loading && (
         <div className="container">
-          <div className="hot-news">
+          <div className="hot-news flex">
             <BodyLeft rss={rss}></BodyLeft>
             <BodyRight rss={rss}></BodyRight>
           </div>

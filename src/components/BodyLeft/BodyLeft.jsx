@@ -4,10 +4,6 @@ import { faComment } from "@fortawesome/free-solid-svg-icons";
 import "./BodyLeft.scss";
 
 export default function BodyLeft({ rss }) {
-  //   function removeCDATA(str) {
-  //     return str.replace("<![CDATA[ ", "").replace(" ]]>", "");
-  //   }
-
   function getTime(str) {
     console.log(str);
     let date = new Date(str);
@@ -19,7 +15,7 @@ export default function BodyLeft({ rss }) {
     }
   }
   return (
-    <div className="left">
+    <div className="left flex">
       <div className="hightlight">
         <a href={rss[0].link}>
           <img src={rss[0].image} alt="" />

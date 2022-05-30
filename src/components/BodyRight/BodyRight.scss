@@ -1,9 +1,13 @@
 .right {
   width: 300px;
   margin-left: 20px;
+  height: 510px;
+  overflow: auto;
   .nav {
     width: 100%;
     height: fit-content;
+    list-style: none;
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     .nav-link {
       font-family: NotoSerif, Georgia, "Times New Roman", Times, serif;
       font-size: 1.6rem;
@@ -22,5 +26,20 @@
   }
   .tabContent {
     padding: 20px;
+    background-color: #fff;
+    .side-article {
+      border-bottom: 1px solid #eee;
+      padding-bottom: 12px;
+      margin-bottom: 15px;
+      p {
+        margin-right: 10px;
+        font-size: 12px;
+        color: #888;
+      }
+      a {
+        flex: 1;
+        color: #00739f;
+      }
+    }
   }
 }
