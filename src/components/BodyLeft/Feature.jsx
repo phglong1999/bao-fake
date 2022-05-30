@@ -8,7 +8,7 @@ export default function Feature({ rss }) {
   return (
     <div className="feature">
       {rss &&
-        rss.slice(8, 12).map((item) => (
+        rss.slice(8, 13).map((item) => (
           <div className="article">
             <a style={{ marginRight: "20px" }} href={item.link}>
               <img src={item.image} alt="" />

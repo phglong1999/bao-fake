@@ -4,6 +4,7 @@ import { faComment } from "@fortawesome/free-solid-svg-icons";
 import "./BodyLeft.scss";
 import Feature from "./Feature";
 import { getTime } from "../../utils/rss";
+import HotNews from "./HotNews";
 
 export default function BodyLeft({ rss }) {
   return (
@@ -27,6 +28,7 @@ export default function BodyLeft({ rss }) {
         </div>
       </div>
       <Feature rss={rss}></Feature>
+      <HotNews rss={rss}></HotNews>
     </div>
   );
 }

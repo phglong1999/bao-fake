@@ -1,8 +1,10 @@
 .right {
   width: 300px;
   margin-left: 20px;
-  height: 510px;
-  overflow: auto;
+  .tab {
+    height: 500px;
+    overflow: auto;
+  }
   .nav {
     width: 100%;
     height: fit-content;
