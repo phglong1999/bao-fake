@@ -1,0 +1,48 @@
+.right {
+  width: 300px;
+  margin-left: 20px;
+  .tab {
+    height: 500px;
+    overflow: auto;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
+  }
+  .nav {
+    width: 100%;
+    height: fit-content;
+    list-style: none;
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    .nav-link {
+      font-family: NotoSerif, Georgia, "Times New Roman", Times, serif;
+      font-size: 1.6rem;
+      color: #000;
+      text-transform: uppercase;
+      padding: 7px 14px;
+      border: none;
+      cursor: pointer;
+    }
+    .active {
+      font-weight: 700;
+      color: #495057;
+      background-color: #fff;
+      border-color: #dee2e6 #dee2e6 #fff;
+    }
+  }
+  .tabContent {
+    padding: 20px;
+    background-color: #fff;
+    .side-article {
+      border-bottom: 1px solid #eee;
+      padding-bottom: 12px;
+      margin-bottom: 15px;
+      p {
+        margin-right: 10px;
+        font-size: 12px;
+        color: #888;
+      }
+      a {
+        flex: 1;
+        color: #00739f;
+      }
+    }
+  }
+}

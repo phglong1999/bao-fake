@@ -1,0 +1,30 @@
+.feature {
+  width: 390px;
+  margin-right: 20px;
+  margin-top: 20px;
+  .article {
+    padding-right: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
+    display: flex;
+    img {
+      width: 150px;
+      height: 100px;
+    }
+    .article-content {
+      padding-top: 12px;
+      a {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: #333;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+      p {
+        color: #888;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
