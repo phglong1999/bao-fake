@@ -67,7 +67,7 @@ export default function Header() {
         <a href="/">CÔNG NGHỆ - GAME</a>
         <a href="/">XE</a>
         <a href="/">THỜI TRANG TRẺ</a>
-        <a href="/">BẠN ĐỌC</a>
+        <a href="/">BẠN ĐỌC</a><a href="/">BẠN ĐỌC</a>
       </div>
     </div>
   );
