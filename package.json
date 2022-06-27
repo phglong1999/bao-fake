@@ -2,7 +2,6 @@
   "name": "bao-fake",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://phglong1999.github.io/bao-fake/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
